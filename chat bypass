@@ -1,0 +1,168 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+
+local TCS = game:GetService("TextChatService")
+local CoreGui = game:GetService("CoreGui")
+local RStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local HttpService = game:GetService("HttpService")
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer.PlayerGui
+local isLegacy = TCS.ChatVersion == Enum.ChatVersion.LegacyChatService
+local ChatBar = CoreGui:FindFirstChild("TextBoxContainer", true) or PlayerGui:FindFirstChild("Chat"):FindFirstChild("ChatBar", true)
+ChatBar = ChatBar:FindFirstChild("TextBox") or ChatBar
+
+if game.Players.LocalPlayer.name == "Porfirey" then
+
+game.Players.LocalPlayer:Kick("fuck off u niger")
+end
+
+
+
+
+local Chat = function(Message)
+	if isLegacy then
+		local ChatRemote = RStorage:FindFirstChild("SayMessageRequest", true)
+		ChatRemote:FireServer(Message, "All")
+	else
+		local Channel = TCS.TextChannels.RBXGeneral
+		Channel:SendAsync(Message)
+	end
+end
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+
+local Window = OrionLib:MakeWindow({Name = "Cash's $ chat bypasser", HidePremium = false, SaveConfig = true, ConfigFolder = "configs"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Words",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥
+
+]]
+
+Tab:AddLabel("Orion libary - ui")
+
+Tab:AddButton({
+	Name = "fix bypasses",
+	Callback = function()
+      		Chat("abcdefghijklmnopqrstuvwxyz")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ass",
+	Callback = function()
+      		Chat("аѕs")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "shit",
+	Callback = function()
+      		Chat("ѕһіt")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "piss",
+	Callback = function()
+      		Chat("рiss")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "fucktard",
+	Callback = function()
+      		Chat("f⁥⁥⁥⁥⁥⁥⁥⁥u⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥с⁥⁥⁥⁥⁥⁥⁥⁥kt⁥⁥⁥⁥⁥⁥⁥⁥а⁥⁥⁥⁥⁥⁥⁥⁥r⁥⁥⁥⁥⁥⁥⁥⁥d")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "dick",
+	Callback = function()
+      		Chat("d⁥⁥⁥⁥і⁥⁥⁥сk")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Bitch",
+	Callback = function()
+      		Chat("Βitсh")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "nigga",
+	Callback = function()
+      		Chat("nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "faggot",
+	Callback = function()
+      		Chat("fаɡɡоt")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "kys",
+	Callback = function()
+      		Chat("kуѕ")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "sentences",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "you are shit at this game",
+	Callback = function()
+      		Chat("уоu аrе ѕһіt at this game")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "roleplay",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "*cums alot*",
+	Callback = function()
+      		Chat("*сums аlоt*")
+  	end    
+})
